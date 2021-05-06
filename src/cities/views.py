@@ -6,11 +6,18 @@ from django.views.generic.detail import DetailView
 
 from cities.forms import HtmlForm, CityForm
 
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
+from django.urls import reverse_lazy
+
 
 
 __all__ = (
     'home',
     'CityDetailView',
+    'CityCreateView',
+    'CityUpdateView',
+    'CityDeleteView'
 )
 
 
@@ -36,3 +43,29 @@ def home(request, pk=None):
 class CityDetailView(DetailView):
     queryset = City.objects.all()
     template_name = 'cities/detail.html'
+    
+    
+    
+class CityCreateView(CreateView):
+    model = City
+    form_class = CityForm
+    template_name = 'cities/create.html'
+    success_url = reverse_lazy('cities:home')
+    
+    
+    
+class CityUpdateView(UpdateView):
+    model = City
+    form_class = CityForm
+    template_name = 'cities/update.html'
+    success_url = reverse_lazy('cities:home')
+    
+    
+    
+class CityDeleteView(DeleteView):
+    model = City
+    template_name = 'cities/delete.html'
+    success_url = reverse_lazy('cities:home')
+    
+    # def get(self, request, *args, **kwargs):
+        # return self.post(request, *args, **kwargs)
