@@ -29,7 +29,8 @@ class TrainForm(forms.ModelForm):
             attrs={
                 'class': 'form-control'
             }
-        ))
+        )
+    )
 
     class Meta:
         model = Train
