@@ -3,7 +3,6 @@ from django.urls import path
 from trains.views import *
 
 
-
 # Create your tests here:
 urlpatterns = [
     # path('', home, name='home'),

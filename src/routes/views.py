@@ -7,14 +7,12 @@ from django.contrib import messages
 from routes.utils import get_routes
 
 
-
 # Create your views here:
 def home(request):
     form = RouteForm()
     return render(request, 'routes/home.html', {'form': form})
-    
-    
-    
+
+
 def find_routes(request):
     if request.method == 'POST':
         form = RouteForm(request.POST)

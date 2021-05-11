@@ -3,7 +3,6 @@ from django import forms
 from cities.models import City
 
 
-        
 class RouteForm(forms.Form):
     from_city = forms.ModelChoiceField(
         label='Откуда', queryset=City.objects.all(),
@@ -21,15 +20,19 @@ class RouteForm(forms.Form):
         )
     )
     cities = forms.ModelMultipleChoiceField(
-        label = 'Через города', queryset=City.objects.all(),
+        label='Через города', queryset=City.objects.all(),
         required=False, widget=forms.SelectMultiple(
             attrs={
                 'class': 'form-control js-example-basic-multiple'
             }
         )
     )
-    travelling_time = forms.IntegerField(label='Время в пути',
-                                     widget=forms.NumberInput(attrs={
-                                         'class': 'form-control',
-                                         'placeholder': 'Введите время в пути'
-                                     }))
+    travelling_time = forms.IntegerField(
+        label='Время в пути',
+        widget=forms.NumberInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Введите время в пути'
+            }
+        )
+    )

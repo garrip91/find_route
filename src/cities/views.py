@@ -19,7 +19,6 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 
 
-
 __all__ = (
     'home',
     'CityDetailView',
@@ -28,7 +27,6 @@ __all__ = (
     'CityDeleteView',
     'CityListView'
 )
-
 
 
 # Create your views here:
@@ -49,49 +47,44 @@ def home(request, pk=None):
     page_obj = lst.get_page(page_number)
     context = {'page_obj': page_obj, 'form': form}
     return render(request, 'cities/home.html', context)
-    
-    
-    
+
+
 class CityDetailView(DetailView):
     queryset = City.objects.all()
     template_name = 'cities/detail.html'
-    
-    
-    
+
+
 class CityCreateView(SuccessMessageMixin, CreateView):
     model = City
     form_class = CityForm
     template_name = 'cities/create.html'
     success_url = reverse_lazy('cities:home')
     success_message = "Название города успешно добавлено!"
-    
-    
-    
+
+
 class CityUpdateView(SuccessMessageMixin, UpdateView):
     model = City
     form_class = CityForm
     template_name = 'cities/update.html'
     success_url = reverse_lazy('cities:home')
     success_message = "Название города успешно изменено!"
-    
-    
-    
+
+
 class CityDeleteView(DeleteView):
     model = City
     # template_name = 'cities/delete.html'
     success_url = reverse_lazy('cities:home')
-    
+
     def get(self, request, *args, **kwargs):
         messages.success(request, "Название города успешно удалено!")
-        return self.post(request, *args, **kwargs) 
-        
-        
-        
+        return self.post(request, *args, **kwargs)
+
+
 class CityListView(ListView):
     paginate_by = 2
     model = City
     template_name = 'cities/home.html'
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         form = CityForm()

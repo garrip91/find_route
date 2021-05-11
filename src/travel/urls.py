@@ -19,7 +19,6 @@ from django.urls import path, include
 from routes.views import home, find_routes
 
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cities/', include(('cities.urls', 'cities'))),
