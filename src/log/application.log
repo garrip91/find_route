@@ -212,3 +212,331 @@ DEBUG 2021-05-12 00:01:20,087 utils (0.000)
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 DEBUG 2021-05-12 00:01:20,103 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 20:55:31,742 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 20:55:31,789 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+WARNING 2021-05-12 20:55:37,564 log Not Found: /favicon.ico
+DEBUG 2021-05-12 20:55:38,768 utils (0.016) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:38,801 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:38,813 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:49,333 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 8 LIMIT 21; args=(8,)
+DEBUG 2021-05-12 20:55:49,335 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:55:49,624 utils (0.282) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 20:55:49,663 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:49,676 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:49,687 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:56,569 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-05-12 20:55:56,571 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:55:56,574 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 20:55:56,589 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:56,602 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:55:56,614 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:56:37,425 utils (0.297) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=('admin',)
+DEBUG 2021-05-12 20:56:37,998 utils (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5' LIMIT 1; args=('g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5',)
+DEBUG 2021-05-12 20:56:38,000 utils (0.000) BEGIN; args=None
+DEBUG 2021-05-12 20:56:38,005 utils (0.015) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5', 'e30:1lgt65:qh2MZqBbBINWOW-QSfVFQwTRCakVmbZkKoM78iKcNgk', '2021-05-26 17:56:37.999886'; args=('g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5', 'e30:1lgt65:qh2MZqBbBINWOW-QSfVFQwTRCakVmbZkKoM78iKcNgk', '2021-05-26 17:56:37.999886')
+DEBUG 2021-05-12 20:56:38,390 utils (0.172) UPDATE "auth_user" SET "last_login" = '2021-05-12 17:56:38.213887' WHERE "auth_user"."id" = 1; args=('2021-05-12 17:56:38.213887', 1)
+DEBUG 2021-05-12 20:56:38,393 utils (0.000) BEGIN; args=None
+DEBUG 2021-05-12 20:56:38,396 utils (0.000) UPDATE "django_session" SET "session_data" = '.eJxVjEEOgjAQRe_StWmYMoXWpXvP0Mx0poIaSCisjHdXEha6_e-9_zKJtnVIW9UljWLOBszpd2PKD512IHeabrPN87QuI9tdsQet9jqLPi-H-3cwUB2-tUMvsfFOAUrschF1goQSQg8albkh9IGxhb7r2EMBaIMiZo7coyvm_QHcJDem:1lgt66:QxEnXun9OVqXF4gQLmkxYDQMtf90oK24ce2EMqFd0-g', "expire_date" = '2021-05-26 17:56:38.392886' WHERE "django_session"."session_key" = 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5'; args=('.eJxVjEEOgjAQRe_StWmYMoXWpXvP0Mx0poIaSCisjHdXEha6_e-9_zKJtnVIW9UljWLOBszpd2PKD512IHeabrPN87QuI9tdsQet9jqLPi-H-3cwUB2-tUMvsfFOAUrschF1goQSQg8albkh9IGxhb7r2EMBaIMiZo7coyvm_QHcJDem:1lgt66:QxEnXun9OVqXF4gQLmkxYDQMtf90oK24ce2EMqFd0-g', '2021-05-26 17:56:38.392886', 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5')
+DEBUG 2021-05-12 20:56:38,639 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-05-12 17:56:38.634890' AND "django_session"."session_key" = 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5') LIMIT 21; args=('2021-05-12 17:56:38.634890', 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5')
+DEBUG 2021-05-12 20:56:38,644 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:38,725 utils (0.016) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+DEBUG 2021-05-12 20:56:43,413 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-05-12 17:56:43.409799' AND "django_session"."session_key" = 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5') LIMIT 21; args=('2021-05-12 17:56:43.409799', 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5')
+DEBUG 2021-05-12 20:56:43,416 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:43,447 utils (0.031) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=()
+DEBUG 2021-05-12 20:56:43,448 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=()
+DEBUG 2021-05-12 20:56:43,457 utils (0.015) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_city_id", "routes_route"."to_city_id" FROM "routes_route" ORDER BY "routes_route"."travel_times" ASC, "routes_route"."id" DESC; args=()
+DEBUG 2021-05-12 20:56:43,569 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:43,644 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-05-12 17:56:43.638803' AND "django_session"."session_key" = 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5') LIMIT 21; args=('2021-05-12 17:56:43.638803', 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5')
+DEBUG 2021-05-12 20:56:43,647 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:49,465 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-05-12 17:56:49.460500' AND "django_session"."session_key" = 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5') LIMIT 21; args=('2021-05-12 17:56:49.460500', 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5')
+DEBUG 2021-05-12 20:56:49,468 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:49,469 utils (0.000) BEGIN; args=None
+DEBUG 2021-05-12 20:56:49,473 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_city_id", "routes_route"."to_city_id" FROM "routes_route" WHERE "routes_route"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:49,514 utils (0.031) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id" FROM "trains_train" INNER JOIN "routes_route_trains" ON ("trains_train"."id" = "routes_route_trains"."train_id") WHERE "routes_route_trains"."route_id" = 1 ORDER BY "trains_train"."travel_time" ASC; args=(1,)
+DEBUG 2021-05-12 20:56:49,521 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:49,535 utils (0.016) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'routes' AND "django_content_type"."model" = 'route') LIMIT 21; args=('routes', 'route')
+DEBUG 2021-05-12 20:56:49,620 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:56:49,639 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:56:49,656 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id" FROM "trains_train" ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 20:56:49,658 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:49,661 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:49,663 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:56:49,786 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-05-12 17:56:49.782468' AND "django_session"."session_key" = 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5') LIMIT 21; args=('2021-05-12 17:56:49.782468', 'g0g5l11b3o9m1fzffd4rmvc8qxwjgpl5')
+DEBUG 2021-05-12 20:56:49,789 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 20:57:38,625 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:57:38,638 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 20:57:38,649 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:08:35,781 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:08:35,789 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:09:59,679 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:09:59,687 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:10:15,078 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:10:15,091 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:10:15,103 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:11:09,042 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:11:09,051 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:11:09,060 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:11:56,530 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:11:56,538 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:19:39,576 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:19:39,592 utils (0.015) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:19:58,198 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:19:58,215 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:19:58,225 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:20:16,365 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:20:16,367 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:20:16,370 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:20:16,385 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:20:16,396 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:20:16,409 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:20:47,197 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:20:47,207 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:20:47,220 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:21:01,646 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:21:01,648 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:21:01,650 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:21:01,663 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:21:01,674 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:21:01,685 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:21:18,150 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:21:18,153 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:21:18,155 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:21:18,170 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:21:18,180 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:21:18,191 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:22:50,852 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:22:50,861 utils (0.016) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:22:54,189 utils (0.016) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:22:54,191 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:22:54,196 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:22:54,233 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:22:54,253 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:22:54,265 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:12,821 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:23:12,823 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:23:12,826 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:23:12,841 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:12,852 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:12,863 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:16,113 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:23:16,115 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:23:16,118 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:23:16,132 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:16,148 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:16,160 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:31,716 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:23:31,724 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:23:32,812 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:23:32,814 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:23:32,816 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:23:32,859 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:32,876 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:32,887 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:59,391 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:23:59,393 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:23:59,396 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" IN (6) ORDER BY "cities_city"."name" ASC; args=(6,)
+DEBUG 2021-05-12 21:23:59,399 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:23:59,415 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:59,427 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:23:59,441 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:24:11,575 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:24:11,578 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:24:11,580 utils (0.015) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:24:11,595 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:24:11,605 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:24:11,615 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:31:54,321 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:31:54,324 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:31:54,327 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:31:54,343 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:31:54,362 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:31:54,374 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:32:00,850 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:32:00,852 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:32:00,855 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:32:00,871 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:32:00,882 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:32:00,895 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:37:02,529 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:37:02,545 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:37:29,713 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:37:29,728 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:38:19,742 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:38:19,758 utils (0.015) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:38:52,491 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:38:52,491 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:40:12,999 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:40:13,014 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:41:51,172 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:41:51,181 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:42:15,256 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:42:15,272 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:44:14,495 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:44:14,504 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:44:49,900 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:44:49,910 utils (0.016) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:45:17,417 utils (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:45:17,417 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:46:26,880 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:46:26,896 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:47:44,183 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:47:44,199 utils (0.016) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:48:21,972 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:48:21,972 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:49:49,504 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:49:49,504 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:50:22,079 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:50:22,079 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:50:33,202 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:50:33,211 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:50:53,036 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:50:53,052 utils (0.015) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:51:46,528 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:51:46,528 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:52:00,638 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:52:00,660 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:52:00,672 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:52:18,797 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 21:52:18,799 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 21:52:18,802 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 21:52:18,816 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:52:18,829 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:52:18,840 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 21:54:09,052 utils (0.015) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:54:09,052 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:55:40,508 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:55:40,523 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:55:45,666 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:55:45,666 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:56:42,236 utils (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:56:42,245 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:57:32,442 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:57:32,442 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:58:09,260 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:58:09,276 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:59:20,206 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:59:20,222 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 21:59:59,948 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 21:59:59,957 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 22:00:34,941 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 22:00:34,957 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-05-12 22:01:15,262 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-05-12 22:01:15,272 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+WARNING 2021-05-12 22:04:40,025 log Not Found: /add_routes/
+DEBUG 2021-05-12 22:04:45,291 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:04:45,310 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:04:45,322 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:06:24,386 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-05-12 22:06:24,387 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-05-12 22:06:24,390 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-05-12 22:06:24,409 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:06:24,420 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:06:24,432 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:06:38,996 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:06:39,008 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-05-12 22:06:39,019 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
