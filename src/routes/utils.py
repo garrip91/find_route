@@ -58,13 +58,13 @@ def get_routes(request, form) -> dict:
         all_trains[(q.from_city_id, q.to_city_id)].append(q)
     for route in right_ways:
         tmp = {}
-        tmp['routes'] = []
+        tmp['trains'] = []
         total_time = 0
         for i in range(len(route) - 1):
             qs = all_trains[(route[i], route[i + 1])]
             q = qs[0]
             total_time += q.travel_time
-            tmp['routes'].append(q)
+            tmp['trains'].append(q)
         tmp['total_time'] = total_time
         if total_time <= travelling_time:
             # Если общее время в пути меньше заданного,

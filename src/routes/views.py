@@ -21,6 +21,7 @@ def home(request):
 def find_routes(request):
     if request.method == 'POST':
         form = RouteForm(request.POST)
+        print(form)
         if form.is_valid():
             try:
                 context = get_routes(request, form)
