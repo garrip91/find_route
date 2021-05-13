@@ -9,7 +9,8 @@
 {% block content %}
 	
 	<h1>Создать маршрут</h1>
-    	
-    {% include 'form.html' with button='Сохранить' %}
+	
+	{% url 'save_route' as action %}	
+    {% include 'form.html' with button='Найти' action=action %}
 
 {% endblock %}
