@@ -70,7 +70,7 @@ def save_route(request):
         form = RouteModelForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.error(request, "Маршрут успешно сохранён!")
+            messages.success(request, "Маршрут успешно сохранён!")
         return redirect('/')
         return render(request, 'routes/create.html', {'form': form})
     else:
