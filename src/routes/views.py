@@ -10,6 +10,9 @@ from django.shortcuts import redirect
 
 from trains.models import Train
 from cities.models import City
+from routes.models import Route
+
+from django.views.generic import ListView, DetailView
 
 
 # Create your views here:
@@ -76,3 +79,14 @@ def save_route(request):
     else:
         messages.error(request, "Невозможно сохранить несуществующий маршрут!")
         return redirect('/')
+
+
+class RouteListView(ListView):
+    paginate_by = 10
+    model = Route
+    template_name = 'routes/list.html'
+    
+    
+class RouteDetailView(DetailView):
+    queryset = Route.objects.all()
+    template_name = 'routes/detail.html'
