@@ -19875,3 +19875,12 @@ DEBUG 2021-05-21 23:18:05,468 schema CREATE INDEX "routes_route_trains_route_id_
 DEBUG 2021-05-21 23:18:05,468 schema CREATE INDEX "routes_route_trains_train_id_b49b9606" ON "routes_route_trains" ("train_id"); (params ())
 DEBUG 2021-05-21 23:18:05,483 schema CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
 DEBUG 2021-05-21 23:18:05,483 schema CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+DEBUG 2022-07-25 20:55:35,997 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-07-25 20:55:36,018 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-07-25 20:55:51,672 utils (0.016) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-07-25 20:55:51,691 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-07-25 20:55:51,716 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+WARNING 2022-07-25 20:55:52,378 log Not Found: /favicon.ico
