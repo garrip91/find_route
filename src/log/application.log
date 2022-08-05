@@ -19884,3 +19884,12 @@ DEBUG 2022-07-25 20:55:51,672 utils (0.016) SELECT "cities_city"."id", "cities_c
 DEBUG 2022-07-25 20:55:51,691 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
 DEBUG 2022-07-25 20:55:51,716 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
 WARNING 2022-07-25 20:55:52,378 log Not Found: /favicon.ico
+DEBUG 2022-08-05 16:47:27,187 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-05 16:47:27,187 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-05 16:47:34,405 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-08-05 16:47:34,412 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-08-05 16:47:34,415 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+WARNING 2022-08-05 16:47:34,911 log Not Found: /favicon.ico
