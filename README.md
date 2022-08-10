@@ -1,19 +1,19 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/garrip91/KINOMONSTER">
+  <a href="https://github.com/garrip91/find_route">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Веб-проект "КиноМонстр"</h3>
+  <h3 align="center">Веб-проект (сервис) по поиску маршрута</h3>
 
   <p align="center">
-    Readme веб-проекта "КиноМонстр"
+    Readme веб-проекта (сервиса) по поиску маршрута
     <br/>
     <br/>
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/Garrip91/KINOMONSTER?color=dark-green) ![Issues](https://img.shields.io/github/issues/Garrip91/KINOMONSTER) 
+![Contributors](https://img.shields.io/github/contributors/Garrip91/find_route?color=dark-green) ![Issues](https://img.shields.io/github/issues/Garrip91/find_route) 
 
 ## Table Of Contents
 
@@ -32,16 +32,16 @@
 
 ![Screen Shot](images/screenshot.png)
 
-Этот проект является сайтом, на котором можно:
+Этот проект является сервисом, на котором можно:
 
 
-* Просматривать информацию о некоторых фильмах
-* Регистрироваться
-* Авторизовываться
+* Прокладывать маршруты
+* Указывать города в пути
+* Расчитывать примерное время в пути
 
 ## Built With
 
-Сайт создан с помощью Python, Django
+Сервис создан с помощью Python, Django
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ https://www.python.org/
 1. Clone the repo
 
 ```sh
-git clone https://github.com/garrip91/KINOMONSTER
+git clone https://github.com/garrip91/find_route
 ```
 
 
@@ -93,7 +93,7 @@ python manage.py runserver
 
 ## Usage
 
-Данный веб-проект Вы можете использовать для просмотра информации о некоторых фильмах, регистрироваться, авторизовываться
+Данный веб-проект (сервис) Вы можете использовать для прокладывания маршрутов с учётом указания городов в пути либо без такового, а также расчёта примерного времени в пути
 
 ## Contributing
 
@@ -109,7 +109,7 @@ python manage.py runserver
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/KINOMONSTER/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/find_route/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
@@ -118,5 +118,5 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/KIN
 ## Acknowledgements
 
 * [Garrip91](https://github.com/garrip91)
-* [KINOMONSTER](https://github.com/garrip91/KINOMONSTER)
+* [find_route](https://github.com/garrip91/find_route)
 * [Python](https://www.python.org/)
